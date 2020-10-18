@@ -11,7 +11,7 @@ public class Seller implements Serializable {
     private Double baseSalary;
     private Department department;
 
-    public Seller(){
+    public Seller() {
 
     }
 

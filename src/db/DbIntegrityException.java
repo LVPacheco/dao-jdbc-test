@@ -1,8 +1,8 @@
 package db;
 
-public class DbIntegrityException extends RuntimeException{
+public class DbIntegrityException extends RuntimeException {
 
-    public DbIntegrityException(String msg){
+    public DbIntegrityException(String msg) {
         super(msg);
     }
 

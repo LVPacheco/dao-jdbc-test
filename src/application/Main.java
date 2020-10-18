@@ -25,15 +25,18 @@ public class Main {
         System.out.println("Test 3");
         list.forEach(System.out::println);
 
-        System.out.println("Test 4");
-        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
-        sellerDao.insert(newSeller);
-        System.out.println(sellerDao.findById(newSeller.getId()));
+//        System.out.println("Test 4");
+//        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
+//        sellerDao.insert(newSeller);
+//        System.out.println(sellerDao.findById(newSeller.getId()));
 
-        System.out.println("Test 5");
-        seller = sellerDao.findById(1);
-        seller.setName("Ana");
-        sellerDao.update(seller);
-        System.out.println(sellerDao.findById(seller.getId()));
+//        System.out.println("Test 5");
+//        seller = sellerDao.findById(1);
+//        seller.setName("Ana");
+//        sellerDao.update(seller);
+//        System.out.println(sellerDao.findById(seller.getId()));
+
+        System.out.println("Test 6");
+        sellerDao.deleteById(14);
     }
 }

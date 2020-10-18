@@ -8,16 +8,22 @@ import model.entities.Seller;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args){
-    SellerDao sellerDao = DaoFactory.createSellerDao();
+    public static void main(String[] args) {
+        SellerDao sellerDao = DaoFactory.createSellerDao();
 
-    Seller seller = sellerDao.findById(3);
-
+        Seller seller = sellerDao.findById(3);
+        System.out.println("Test 1");
         System.out.println(seller);
 
         Department department = new Department(2, null);
         List<Seller> list = sellerDao.findByDepartment(department);
+        System.out.println("Test 2");
         list.forEach(System.out::println);
+
+        list = sellerDao.findAll();
+        System.out.println("Test 3");
+        list.forEach(System.out::println);
+
 
     }
 }
